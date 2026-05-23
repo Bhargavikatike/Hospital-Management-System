@@ -10,6 +10,9 @@ import { doctorRoute }from "./APIS/doctorAPI.js";
 import { receptionistRoute } from "./APIS/receptionistApi.js";
 import { upload } from "./Config/multer.js";
 import { startAppointmentReminderScheduler } from "./utils/reminderScheduler.js";
+import {
+  verifyEmailTransporter
+} from "./Config/mailer.js";
 import multer from "multer";
 
 
@@ -107,6 +110,8 @@ const startServer = async () => {
     app.listen(PORT, () => {
 
       console.log(`Server running on port ${PORT}`);
+
+      verifyEmailTransporter();
 
       startAppointmentReminderScheduler();
 

@@ -29,7 +29,8 @@ export const sendEmail = async (
       );
 
     console.log(
-      "Email sent successfully"
+      "Email sent successfully:",
+      info.messageId
     );
 
     return info;
@@ -40,7 +41,7 @@ export const sendEmail = async (
 
     console.log(
       "EMAIL ERROR:",
-      error
+      error.message
     );
 
     throw error;

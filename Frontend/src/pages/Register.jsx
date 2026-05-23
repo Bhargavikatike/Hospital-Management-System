@@ -887,6 +887,8 @@ function Register() {
 
                   type="password"
 
+                  autoComplete="new-password"
+
                   placeholder=
                   "Create password"
 
