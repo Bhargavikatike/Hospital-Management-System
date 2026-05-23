@@ -25,7 +25,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://heath-care-management-ah0x4kafk-geetavarshinis-projects.vercel.app"
+      "https://heath-care-management.vercel.app"
     ],
     credentials: true,
   })
