@@ -319,14 +319,17 @@ commonRoute.post(
           )
       });
 
-      const verifyLink =
-  `https://heath-care-management.vercel.app/verify-email/${token}`;
-      await sendEmail(
-        email,
-        "Verify Your CareSync Email",
-        `<p>Please verify your email before registration.</p><a href="${verifyLink}">Verify Email</a>`
-      );
-
+      //     const verifyLink =
+      // `https://heath-care-management.vercel.app/verify-email/${token}`;
+      //     await sendEmail(
+      //       email,
+      //       "Verify Your CareSync Email",
+      //       `<p>Please verify your email before registration.</p><a href="${verifyLink}">Verify Email</a>`
+      //     );
+            return res.status(200).json({
+  success: true,
+  message: "Verification route working"
+});
       return res.status(200).json({
         success: true,
         message:
