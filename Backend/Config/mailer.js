@@ -1,23 +1,19 @@
 import nodemailer from "nodemailer";
-import { config } from "dotenv";
-
-config();
-
-export const emailFrom =
-  process.env.EMAIL_USER ||
-  process.env.EMAIL;
 
 export const mailerTransporter =
   nodemailer.createTransport({
 
-    service: "gmail",
+    host: "smtp-relay.brevo.com",
+
+    port: 587,
+
+    secure: false,
 
     auth: {
 
-      user: emailFrom,
+      user: process.env.EMAIL_USER,
 
-      pass:
-        process.env.EMAIL_PASS
+      pass: process.env.EMAIL_PASS
 
     }
 
