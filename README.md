@@ -36,7 +36,6 @@ The objective of this project is:
 * Role-based Access Control
 
 ### Additional Libraries
-
 * Multer
 * Cloudinary
 * Cookie Parser
@@ -102,9 +101,6 @@ Admin features include:
 * Send appointment reminder emails
 * View audit logs
 * Dashboard analytics
-
-# conclusion
-You can use this conclusion section:
 
 ## Conclusion
 
