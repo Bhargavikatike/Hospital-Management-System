@@ -50,6 +50,7 @@ app.use(
   express.static("uploads")
 );
 
+
 app.use("/patient-api", patientRoute);
 app.use("/common-api",commonRoute);
 app.use("/admin-api", adminRoute);
@@ -58,6 +59,17 @@ app.use("/receptionist-api", receptionistRoute);
 app.get("/", (req, res) => {
   res.send("Hospital Management API Running");
 });
+
+app.post(
+  "/test-route",
+  (req, res) => {
+
+    return res.json({
+      success: true
+    });
+
+  }
+);
 
 app.use((err, req, res, next) => {
   console.error(
