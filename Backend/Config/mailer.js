@@ -1,4 +1,10 @@
 import nodemailer from "nodemailer";
+import { config } from "dotenv";
+
+config();
+
+export const emailFrom =
+  process.env.EMAIL_USER;
 
 export const mailerTransporter =
   nodemailer.createTransport({
