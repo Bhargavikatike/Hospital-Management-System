@@ -379,6 +379,7 @@ The frontend communicates with the backend using REST APIs.
 
 # 👩‍💻 Developed By
 
-**Team-30**  
+**Team-30** 
+B.Tech – Anurag University
 
 ---
